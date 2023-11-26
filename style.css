@@ -26,67 +26,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 
 .covermodal {
-    background-image: url(./img/bg-modal.jpg);
-    background-position: center;
+    background: rgba(0, 0, 0, 0.575) url('./img/bg-modall.jpg');
+    background-position:center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-blend-mode: multiply;
 }
 
 .contentmodal {
-    font-family: 'Great Vibes', cursive;
+    font-family: latin;
     margin: auto;
-    color: var(--primary-color);
-    font-size: 100px;
+    color: white;
 }
-
 .contentmodal h6 {
     font-family: standart;
-    color: var(--primary-color);
+    color: white;
 }
 
 .contentmodal p {
     font-family: standart;
-    color: var(--primary-color);
+    color: white;
     font-size: 12px;
 }
 
 .tombolbuka {
-    font-family: standart;
+    font-family : standart;
+    background-color: var(--secondary-color) ;
+}
+.tombolbukamodal {
+    font-family : standart;
 }
 
-.boxnama {
-    width: 200px;
-    max-width: 100%;
-    height: auto;
-    border: 1px solid;
-    border-color: var(--primary-color);
-    border-radius: 25px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 15px;
-}
-
-.boxnama h6 {
-    font-family: standart;
-    font-size: 13px;
-    color: var(--primary-color);
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-.boxnama h3 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+.contentmodal h3 {
+    font-family:Georgia, 'Times New Roman', Times, serif;
     font-size: 30px;
-}
-
-.tombolbuka {
-    color: var(--white-color);
-    background-color: var(--primary-color);
-}
-
-.tombolbuka:hover {
-    color: var(--white-color);
-    background-color: var(--secondary-color);
 }
 
 
@@ -123,6 +96,73 @@
     }
 }
 
+/* tesbg */
+/* tesbg */
+.image-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.pemisah,
+.ornament,
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+
+.pemisah,
+.ornament {
+    z-index: 1; /* Nilai z-index untuk elemen ornament dan pemisah */
+}
+
+.background-image {
+    z-index: 0; /* Nilai z-index untuk gambar latar belakang */
+    background-image: url('./img/bg-body.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    position: relative;
+    z-index: 2; /* Nilai z-index untuk kontainer teks */
+}
+
+.mempelai {
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+.nama_mempelai {
+    z-index: 3; /* Nilai z-index untuk teks nama mempelai */
+}
+
+/* tombol Instagram */
+.tombolbuka {
+    z-index: 4; /* Nilai z-index untuk tombol Instagram */
+}
+
+.lower {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+}
+
+  .rounded-box {
+    width: 80%;
+    height: auto;
+    background-color: #ffffff;
+    border-radius: 15px; /* Mengatur sudut lengkung */
+    padding: 20px; /* Padding untuk memberi jarak antara konten dan tepi kotak */
+    margin: 20px; /* Margin untuk memberi jarak antara kotak dan elemen lain */
+    margin-left: auto;
+    margin-right: auto;
+  }
+/* tesbf */
 /* COUNTDOWN */
 
 #countdown {
@@ -203,7 +243,7 @@
     /* Mengatur sudut kiri atas menjadi bulat */
     border-top-right-radius: 20px;
     /* Mengatur sudut kanan atas menjadi bulat */
-    z-index: 0001;
+    z-index: 000001;
     align-items: center;
 }
 
@@ -240,12 +280,6 @@
 }
 
 /* end navbar */
-
-.cover-content {
-    background-image: url(./img/bg-primary.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
 .hal1 {
     background-image: url(./img/bghal1.jpg);
@@ -305,13 +339,6 @@
     margin: auto;
 }
 
-.rounded-image {
-    border-radius: 100%;
-    width: 300px;
-    height: auto;
-    max-width: 100%;
-}
-
 .mempelai {
     text-decoration: none;
     color: var(--white-color);
@@ -328,12 +355,6 @@
     color: var(--primary-color);
     font-size: 80px;
     font-family: 'latin';
-}
-
-.mempelai h2 {
-    color: var(--primary-color);
-    font-size: 30px;
-    font-family: 'Great Vibes', cursive;
 }
 
 .nama_mempelai {
@@ -376,19 +397,9 @@
     color: var(--dark-color);
 }
 
-.date h2 {
-    font-size: large;
-}
-
 .date hr {
     border: 10px solid;
     border-color: var(--dark-color);
-}
-
-.lokasi {
-    font-family: latin;
-    font-size: 35px;
-    color: var(--grey-color);
 }
 
 /* END HAL 4 */
@@ -440,12 +451,14 @@
 /* END HAL 6 */
 
 .hal7 {
-    background-image: url(./img/bghal1.jpg);
-    background-position: center;
-    background-size: cover;
-    background-blend-mode: multiply;
-    min-height: 30vh;
-    display: flex;
+    width: 100%;
+    height: auto;
+    background-color: rgba(217, 233, 248, 0.685);
+    border-radius: 20px; /* Mengatur sudut lengkung */
+    padding: 20px; /* Padding untukmb meeri jarak antara konten dan tepi kotak */
+    margin: 20px; /* Margin untuk memberi jarak antara kotak dan elemen lain */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .logobank {
@@ -457,19 +470,6 @@
 /* END HAL 7 */
 
 /* HAL 8 */
-
-.rsvp {
-    background: var(--white-color);
-    padding-top: 40px;
-    padding-bottom: 40px;
-    border-radius: 30px;
-}
-
-.rsvp h1 {
-    font-family: latin;
-    font-size: 60px;
-    color: var(--grey-color);
-}
 
 .boxrsvp {
     background-image: url(./img/7.jpg);
@@ -523,12 +523,3 @@
     color: var(--dark-color);
 }
 
-.tombolbuka {
-    color: var(--white-color);
-    background-color: var(--primary-color);
-}
-
-.tombolbuka:hover {
-    color: var(--white-color);
-    background-color: var(--secondary-color);
-}
